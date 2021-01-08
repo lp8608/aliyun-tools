@@ -1,0 +1,19 @@
+spring:
+    jmx:
+        enabled: false
+javafx:
+    stage:
+        resizable: true
+    title: aliyun-tools
+
+
+aliyun:
+    accessId:
+    securet:
+    rdsInstanceId:
+    defaultAccountName:
+    defaultPrivilege:
+    accountPass:
+    innerHost:
+    host:
+    itcodeList:

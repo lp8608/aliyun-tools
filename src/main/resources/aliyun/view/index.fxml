@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane id="mySplitPane" dividerPositions="0.28870292887029286" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aliyun.controller.IndexController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="100.0"  maxWidth="159.0" prefHeight="485.0" prefWidth="159.0" >
+            <children>
+                <Button layoutX="7.0" layoutY="14.0" mnemonicParsing="false" onAction="#showWhiteListView" prefHeight="26.0" prefWidth="132.0" text="RDS白名单" />
+                <Button layoutX="7.0" layoutY="48.0" mnemonicParsing="false" onAction="#showCreateDBView" prefHeight="26.0" prefWidth="132.0" text="RDS新建数据库" />
+            </children>
+        </AnchorPane>
+        <Pane id="rightPane" fx:id="myDynamicPane" prefHeight="500.0" prefWidth="554.0" />
+    </items>
+</SplitPane>

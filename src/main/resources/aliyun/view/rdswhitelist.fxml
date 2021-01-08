@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aliyun.controller.RdsController">
+    <children>
+
+        <Label layoutX="32.0" layoutY="31.0" text="阿里云测试RDS白名单添加" />
+
+        <Label layoutX="42.0" layoutY="68.0" text="ITcode" />
+        <TextField fx:id="groupName" layoutX="107.0" layoutY="64.0" promptText="个人itcode" />
+        <Label layoutX="46.0" layoutY="105.0" text="公网IP" />
+        <TextField fx:id="ip" layoutX="105.0" layoutY="101.0" promptText="百度搜索ip" />
+
+        <Button layoutX="32.0" layoutY="148.0" mnemonicParsing="false" onAction="#addRdsWhiteList" text="添加测试RDS白名单" />
+        <Label fx:id="addWhiteListResult" layoutX="31.0" layoutY="193.0" textFill="#18bd25fc" />
+
+    </children>
+</Pane>

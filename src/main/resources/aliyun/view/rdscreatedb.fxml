@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="aliyun.controller.RdsController">
+    <children>
+
+        <Label layoutX="32.0" layoutY="31.0" text="阿里云测试RDS创建数据库"/>
+
+        <Label layoutX="42.0" layoutY="68.0" text="数据库名称"/>
+        <TextField fx:id="dbName" layoutX="107.0" layoutY="64.0" prefHeight="23.0" prefWidth="364.0"
+                   promptText="bjapp2_itsm_haid_20200825_v54"/>
+        <Label layoutX="46.0" layoutY="105.0" text="描述信息"/>
+        <TextArea fx:id="desc" layoutX="105.0" layoutY="101.0" prefHeight="52.0" prefWidth="364.0"
+                  promptText="数据库描述：珠海华发投控-20201217-POC环境 王礼凯"/>
+
+        <Button layoutX="41.0" layoutY="163.0" mnemonicParsing="false" onAction="#createDB" text="创建数据库"/>
+        <Label fx:id="createDBResult" layoutX="130.0" layoutY="167.0" textFill="#85fc17"/>
+
+        <TextArea fx:id="connConfig" layoutX="41.0" layoutY="209.0" promptText="数据库连接信息"/>
+
+    </children>
+</Pane>
